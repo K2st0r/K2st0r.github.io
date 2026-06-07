@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>K2st0r — Open Source Developer</title>
+<meta name="description" content="Open source developer. Captcha recognition, crypto tools, data collection, file sync.">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--bd:#30363d;--fg:#c9d1d9;--fg2:#8b949e;--blue:#58a6ff;--green:#3fb950;--purple:#d2a8ff;--orange:#d29922;--pink:#f778ba}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
+.container{max-width:1000px;margin:0 auto;padding:40px 20px}
+.hero{text-align:center;padding:60px 0 40px}
+.hero h1{font-size:42px;font-weight:700;background:linear-gradient(135deg,var(--blue),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{color:var(--fg2);margin:12px 0 20px;font-size:16px;max-width:500px;margin-left:auto;margin-right:auto}
+.hero .badge{display:inline-block;background:#1f6feb22;color:var(--blue);padding:4px 16px;border-radius:99px;font-size:12px;font-weight:600;margin:4px}
+.hero .badge.green{background:#3fb95022;color:var(--green)}
+.hero .badge.orange{background:#d2992222;color:var(--orange)}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:32px 0}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:22px;transition:border-color .2s}
+.card:hover{border-color:var(--blue)}
+.card h3{font-size:16px;margin-bottom:6px}
+.card h3 a{color:var(--blue);text-decoration:none}
+.card h3 a:hover{text-decoration:underline}
+.card .desc{color:var(--fg2);font-size:13px;margin-bottom:10px}
+.card .tags{display:flex;gap:4px;flex-wrap:wrap}
+.card .tag{font-size:10px;padding:2px 8px;border-radius:99px;background:#222;color:var(--fg2);font-weight:600}
+.card .tag.py{color:var(--blue);background:#1f6feb22}
+.card .tag.js{color:var(--orange);background:#d2992222}
+.tag.donate{background:#3fb95022;color:var(--green)}
+.donate-box{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:32px;text-align:center;margin:32px 0}
+.donate-box h2{font-size:18px;margin-bottom:8px}
+.donate-box p{color:var(--fg2);font-size:13px;margin-bottom:16px}
+.donate-box .wallet{background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:12px 20px;font-family:monospace;font-size:13px;display:inline-block;color:var(--purple);word-break:break-all}
+.donate-box img{max-width:200px;border-radius:12px;border:2px solid var(--bd);margin-top:12px}
+.stats-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:24px 0}
+.stat{text-align:center;padding:16px;background:var(--card);border:1px solid var(--bd);border-radius:10px}
+.stat .num{font-size:28px;font-weight:700;color:var(--blue)}
+.stat .lbl{font-size:11px;color:var(--fg2);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.ft{text-align:center;color:#484f58;font-size:11px;margin-top:40px;padding-top:20px;border-top:1px solid var(--bd)}
+.ft a{color:var(--blue)}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="hero">
+<h1>K2st0r</h1>
+<p>Open-source developer building practical tools for developers worldwide.</p>
+<div>
+<span class="badge">🐍 Python</span>
+<span class="badge green">🧩 Captcha OCR</span>
+<span class="badge orange">₿ Crypto</span>
+<span class="badge">🔧 CLI Tools</span>
+</div>
+</div>
+
+<div class="stats-box">
+<div class="stat"><div class="num" id="repos">5</div><div class="lbl">Projects</div></div>
+<div class="stat"><div class="num" id="lang">Python</div><div class="lbl">Primary Stack</div></div>
+<div class="stat"><div class="num">MIT</div><div class="lbl">License</div></div>
+</div>
+
+<div class="projects">
+<div class="card">
+<h3><a href="https://github.com/K2st0r/captchahub">🔍 CaptchaHub</a></h3>
+<div class="desc">Enterprise CAPTCHA recognition platform. Web dashboard + REST API for OCR and slide captcha detection.</div>
+<div class="tags">
+<span class="tag py">Flask</span>
+<span class="tag py">ddddocr</span>
+<span class="tag py">REST API</span>
+<span class="tag donate">Donate</span>
+</div>
+</div>
+
+<div class="card">
+<h3><a href="https://github.com/K2st0r/crypto-bot">₿ CryptoPriceBot</a></h3>
+<div class="desc">Real-time cryptocurrency technical analysis CLI. SMA, EMA, RSI, MACD from Binance. Zero dependencies.</div>
+<div class="tags">
+<span class="tag py">CLI</span>
+<span class="tag py">Binance</span>
+<span class="tag py">TA</span>
+<span class="tag donate">Donate</span>
+</div>
+</div>
+
+<div class="card">
+<h3><a href="https://github.com/K2st0r/data-collector">📊 Data Collector</a></h3>
+<div class="desc">Universal web data extraction toolkit. SEO meta, pricing, structured data with retry and export.</div>
+<div class="tags">
+<span class="tag py">Scraping</span>
+<span class="tag py">CLI</span>
+<span class="tag py">CSV</span>
+<span class="tag donate">Donate</span>
+</div>
+</div>
+
+<div class="card">
+<h3><a href="https://github.com/K2st0r/filesync">🔄 FileSync</a></h3>
+<div class="desc">Smart file sync &amp; incremental backup. MD5 verification, dry-run, fnmatch patterns, cross-platform.</div>
+<div class="tags">
+<span class="tag py">CLI</span>
+<span class="tag py">Backup</span>
+<span class="tag py">Cross-Platform</span>
+<span class="tag donate">Donate</span>
+</div>
+</div>
+
+<div class="card">
+<h3><a href="https://github.com/K2st0r/captcha-toolkit">🧰 Captcha Toolkit</a></h3>
+<div class="desc">Universal CAPTCHA recognition SDK. OCR, slide detection, batch processing, file/Base64/DataURI input.</div>
+<div class="tags">
+<span class="tag py">SDK</span>
+<span class="tag py">ddddocr</span>
+<span class="tag py">Python</span>
+<span class="tag donate">Donate</span>
+</div>
+</div>
+</div>
+
+<div class="donate-box" id="donate">
+<h2>💚 Support Open Source</h2>
+<p>If any of these projects help you, please consider supporting — it keeps the work going.</p>
+<img src="https://raw.githubusercontent.com/K2st0r/captchahub/main/static/zan.png" alt="Donation QR">
+<p style="margin-top:10px;font-size:12px;color:var(--fg2)">📱 WeChat Pay &nbsp;·&nbsp; 📧 USDT (ERC20)</p>
+<div class="wallet">0xAfe9B67B1DF618FAeD32dC71E3458cf549f26697</div>
+</div>
+
+<div class="ft">
+<p>Made with ❤️ by <a href="https://github.com/K2st0r">K2st0r</a> · MIT License</p>
+<p style="margin-top:6px">
+<a href="https://github.com/K2st0r?tab=repositories">All Repositories</a>
+</p>
+</div>
+</div>
+</body>
+</html>
